@@ -4,24 +4,19 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <title>Home page</title>
+    <title>Credit Score - Rateworks</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- Bootstrap core JS-->
-    <script src="../../assets/js/custom.js" type="text/javascript"></script>
-    <!-- <script src="../../assets/js/bootstrap.min.js" type="text/javascript" ></script> -->
-    <script src="../../assets/js/jquery-3.2.1.slim.min.js" type="text/javascript"></script>
-    <script src="../../assets/js/popper.min.js" type="text/javascript"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <header>
         <div class="container container-lg">
             <nav class="navbar navbar-expand-lg navbar-light px-0">
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="index.html">
                     <img src="./assets/images/main-logo.png" alt="rates logo" class="header-logo">
                 </a>
                 <a class="nav-link header-button mr-0 text-center d-lg-none" href="#">
@@ -57,16 +52,18 @@
             </nav>
         </div>
     </header>
-
+    <div class="container container-lg">
+        <div class="mt-3 d-none d-lg-block">
+            <a class="text-sm text-gray-light mt-4 mr-2" href="index.html">Arizona</a><img src="./assets/images/ionic-ios-arrow-back.svg" alt="right icon"><a class="text-sm text-gray-light  mt-4 ml-2  mr-2" href="#">...</a><img src="./assets/images/ionic-ios-arrow-back.svg" alt="right icon"><a class="text-sm text-gray-light  mt-4 ml-2 mr-2" href="current-payment.html">Current Payment </a><img src="./assets/images/ionic-ios-arrow-back.svg" alt="right icon"><a class="text-sm text-gray-light mt-4 ml-2 mr-2" href="gross-income.html">Gross Income</a><img src="./assets/images/ionic-ios-arrow-back.svg" alt="right icon"><a class="text-sm text-primary-color underline mt-4 ml-2 mr-2" href="credit-score.html">Credit Score</a>
+          </div>
+      </div>
     <!-- inner page content -->
-    <section class="inner-section d-flex">
+    <section class="inner-section bottom-spacing-mobile d-flex">
         <div class="container">
-            <div class="mt-3 d-none d-lg-block">
-                <a class="text-sm text-gray-light mt-4 mr-2" href="index.html">Arizona</a><img src="./assets/images/ionic-ios-arrow-back.svg" alt="right icon"><a class="text-sm text-gray-light  mt-4 ml-2  mr-2" href="#">...</a><img src="./assets/images/ionic-ios-arrow-back.svg" alt="right icon"><a class="text-sm text-gray-light  mt-4 ml-2 mr-2" href="current-payment.html">Current Payment </a><img src="./assets/images/ionic-ios-arrow-back.svg" alt="right icon"><a class="text-sm text-gray-light mt-4 ml-2 mr-2" href="gross-income.html">Gross Income</a><img src="./assets/images/ionic-ios-arrow-back.svg" alt="right icon"><a class="text-sm text-primary-color underline mt-4 ml-2 mr-2" href="credit-score.html">Credit Score</a>
-              </div>
+            
             <h3 class="text-center mt-4 pt-1"><span class="text-light-primary">Get Your</span> <span class="text-primary-color font-weight-bold">Refinance Quote</span> <span class="text-light-primary">Now</span></h3>
             <div class="row d-flex justify-content-center">
-                <div class="col-lg-11 col-xl-9">
+                <div class="col-lg-11 col-xl-10">
                     <div class="inner-container mt-3 mb-2 mb-md-5 link-default">
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" style="width: 51%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -76,64 +73,61 @@
                             <p>What is your credit score?</p>
                         </div>
                         <div class="content-section text-center">
-                            <div class="credit-polygon d-flex justify-content-center mt-2">
-                                <span class="poor">Poor</span>
-                                <!-- <img src="assets/images/credit/Polygon 4.svg"> -->
-                                <!-- <img src="assets/images/credit/ring-chart.svg" class="ring-chart"> -->
-                                <!-- <img src="assets/images/credit/circle.svg" class="circle"> -->
-                                <img src="assets/images/credit/pie-graph.png" class="circle">
-                                <!-- <img src="assets/images/credit/polygon.svg" class="polygon"> -->
-                                <span class="great">Great</span>
-                            </div>    
-                            <div class="row d-flex justify-content-center">
+                            <div class="credit-polygon d-flex justify-content-center ">
+
+                                <div class="polygon-center">
+                                    <span class="poor">Poor</span>
+                                    <img src="assets/images/credit/pie-graph.png" class="circle">
+                                    <div class="pointer-box">
+                                        <img src="assets/images/credit/pointer.png" class="pointer ">
+                                    </div>
+                                    <span class="great">Great</span>
+                                </div>
+                            </div>
+                            <div class="row no-gutters d-flex justify-content-center mb-md-3">
                                 <div class="col-lg-6 col-md-7">
-                                     <div class="row"> 
+                                     <div class="row">
                                         <div class="col-4 col-lg-3">
                                             <div class="list-items1">
-                                               <a href="vehicle-year.html"> <button type="button" class="btn bg-danger-red">350-400</button></a>
+                                               <button type="button" class="btn bg-danger-red btn-350">350-400</button>
                                             </div>
                                         </div>
                                         <div class="col-4 col-lg-3">
                                             <div class="list-items1">
-                                                <a href="vehicle-year.html"> 
-                                                <button type="button" class="btn bg-danger-red-600">400-450</button>
-                                                </a>
+                                                <button type="button" class="btn bg-danger-red-600 btn-400">400-450</button>
                                             </div>
                                         </div>
                                         <div class="col-4 col-lg-3">
                                             <div class="list-items1">
-                                                <a href="vehicle-year.html"> 
-                                                    <button type="button" class="btn bg-danger-red-400">450-500</button>
-                                                </a>    
+                                                    <button type="button" class="btn bg-danger-red-400 btn-450">450-500</button>
+                                            </div>                                        </div>
+                                        <div class="col-4 col-lg-3">
+                                            <div class="list-items1">
+                                               <button type="button" class="btn bg-orange btn-500">500-550</button>
                                             </div>
                                         </div>
                                         <div class="col-4 col-lg-3">
                                             <div class="list-items1">
-                                                <button type="button" class="btn bg-orange">500-550</button>
+                                                <button type="button" class="btn bg-orange btn-550">550-600</button>
                                             </div>
                                         </div>
                                         <div class="col-4 col-lg-3">
                                             <div class="list-items1">
-                                                <button type="button" class="btn bg-orange">550-600</button>
+                                                <button type="button" class="btn bg-success-light btn-600">600-650</button>
                                             </div>
                                         </div>
                                         <div class="col-4 col-lg-3">
                                             <div class="list-items1">
-                                                <button type="button" class="btn bg-success-light">600-650</button>
+                                               <button type="button" class="btn bg-success-light-600 btn-650">650-700</button>
                                             </div>
                                         </div>
                                         <div class="col-4 col-lg-3">
                                             <div class="list-items1">
-                                                <button type="button" class="btn bg-success-light-600">650-700</button>
-                                            </div>
-                                        </div>
-                                        <div class="col-4 col-lg-3">
-                                            <div class="list-items1">
-                                                <button type="button" class="btn bg-success-dark text-white">700-850</button>
+                                               <button type="button" class="btn bg-success-dark text-white btn-700">700-850</button>
                                             </div>
                                         </div>
 
-                                    </div>    
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -173,7 +167,7 @@
                 The materials contained within this website are protected by
                 applicable copyright and trademark laws.
             </p>
-            
+
             </div>
         </div>
     </footer>
@@ -184,7 +178,7 @@
             <img src="./assets/images/acredit_business.png" alt="rates logo" class="acredit-logo">
         </div>
     </div>
-
+<script src="assets/js/graph.js" type="text/javascript"></script>
 </body>
 
 </html>

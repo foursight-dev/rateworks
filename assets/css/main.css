@@ -6,272 +6,286 @@
 @import 'plugins.css';
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Acumin-pro', sans-serif;
-    overflow-x: hidden;
-    background: #fff;
-    font-size: 16px;
+  font-family: 'Acumin-pro', sans-serif;
+  overflow-x: hidden;
+  background: #fff;
+  font-size: 16px;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-family: 'Acumin-pro';
+  font-family: 'Acumin-pro';
 }
 
-
 .form-control.input {
-    height: 60px;
-    border-color: #ebedf4;
-    padding-top: 10px;
-    border-radius: 10px;
-    color: #243987;
+  height: 60px;
+  border-color: #ebedf4;
+  padding-top: 10px;
+  border-radius: 10px;
+  color: #243987;
 }
 
 .form-control.input:hover {
-    box-shadow: 0px 1px 4px #021b7529;
-    -webkit-box-shadow: 0px 1px 4px #021b7529;
-    -moz-box-shadow: 0px 1px 4px #021b7529;
+  box-shadow: 0px 1px 4px #021b7529;
+  -webkit-box-shadow: 0px 1px 4px #021b7529;
+  -moz-box-shadow: 0px 1px 4px #021b7529;
 }
-
-
+form .error {
+  color: #ff0000;
+  margin-bottom: 4px;
+}
+form label.error {
+  font-size: 14px;
+    margin-top: 4px;
+    float: left;
+    text-align: initial;
+}
 /* header css */
 
 header {
-    background-color: #fff;
-    box-shadow: 0 0 18px -10px #021b75;
-    opacity: 0.87;
+  background-color: #fff;
+  box-shadow: 0 0 18px -10px #021b75;
+  opacity: 0.87;
 }
 
 .header-logo {
-    max-width: 192px;
+  max-width: 192px;
 }
 
 header .navbar {
-    padding: 24px 1rem;
+  padding: 24px 1rem;
 }
 
 .navbar-nav .nav-link {
-    margin-right: 20px;
-    color: #222 !important;
-    padding: 0px 20px !important;
-    text-align: left;
-    font-size: 15px;
+  margin-right: 20px;
+  color: #222 !important;
+  padding: 0px 20px !important;
+  text-align: left;
+  font-size: 15px;
 }
 
 .navbar .header-button {
-    width: 155px;
-    font-size: 12px !important;
-    background: linear-gradient(180deg, #b4dc22, #aacf22);
-    padding: 10px 10px !important;
-    border-radius: 5px;
-    color: #243987 !important;
+  width: 155px;
+  font-size: 12px !important;
+  background: linear-gradient(180deg, #b4dc22, #aacf22);
+  padding: 10px 10px !important;
+  border-radius: 5px;
+  color: #243987 !important;
 }
 
 .header-button span {
-    color: #243987;
-    font-size: 20px;
-    font-family: 'Roboto Medium';
+  color: #243987;
+  font-size: 20px;
+  font-family: 'Roboto Medium';
+  letter-spacing: 1px;
 }
 
 /* footer css*/
 
 .main-footer {
-    background-image: linear-gradient(180deg, #021b75, #021b75);
+  background-image: linear-gradient(180deg, #021b75, #021b75);
 }
 
 .footer-flex-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
 }
-
 
 .footer-link {
-    font-size: 22px;
-    color: white !important;
-    font-weight: bold;
+  font-size: 22px;
+  color: white !important;
+  font-weight: bold;
 }
 footer .inner-footer .text-xl {
-    font-size: 18px !important;
-    font-weight: bold;
+  font-size: 18px !important;
+  font-weight: bold;
 }
 
 .bottom-footer {
-    background: #e3edfc;
+  background: #e3edfc;
 }
 
 .bottom-footer .verified-logo {
-    width: 270px;
-    margin: 8px 0;
+  width: 270px;
+  margin: 8px 0;
 }
 
 .bottom-footer .acredit-logo {
-    width: 120px;
-    margin-left: 25px;
+  width: 120px;
+  margin-left: 25px;
 }
 
 @media screen and (min-width: 1199px) {
-    .container {
-        max-width: 1220px;
-    }
+  .container {
+    max-width: 1220px;
+  }
 
-    .nav-link {
-        font-size: 17px !important;
-    }
-
-   
+  .nav-link {
+    font-size: 17px !important;
+  }
 }
 
 @media screen and (max-width: 300px) {
-header .header-logo {
+  header .header-logo {
     max-width: 112px;
-}
+  }
 }
 @media screen and (max-width: 321px) {
-    header .navbar .header-button {
-        width: 120px;
-        padding: 7px 0px 3px 0 !important;
-    }
+  header .navbar .header-button {
+    width: 120px;
+    padding: 7px 0px 3px 0 !important;
+  }
 
-    header .navbar .header-button {
-        font-size: 10px !important;
-    }
+  header .navbar .header-button {
+    font-size: 10px !important;
+  }
 
-    .link-default .trim .list-items button,
-    .link-default .trim .list-items a {
-        font-size: 14px;
-    }
+  .link-default .trim .list-items button,
+  .link-default .trim .list-items a {
+    font-size: 14px;
+  }
 
-    .credit-polygon .polygon {
-        left: 10% !important;
-    }
+  .credit-polygon .polygon {
+    left: 10% !important;
+  }
 
-    .list-items1 .btn {
-        padding: 11px 6px;
-    }
+  .list-items1 .btn {
+    padding: 11px 6px;
+  }
 }
-
+@media screen and (max-width: 375px) {
+  .list-items1 .btn {
+    padding: 11px 11px;
+  }
+}
 @media screen and (max-width: 767px) {
-    .navbar .header-button {
-        width: 140px;
-        padding: 7px 3px 3px 3px !important;
-    }
+  .navbar .header-button {
+    width: 140px;
+    padding: 7px 3px 3px 3px !important;
+  }
 
-    .header-button span {
-        font-size: 16px;
-    }
+  .header-button span {
+    font-size: 16px;
+  }
 
-    .inner-section {
-        min-height: auto;
-        background: unset;
-    }
+  .inner-section {
+    min-height: auto;
+    background: unset;
+  }
 
-    .content-main {
-        width: 100%;
-        box-shadow: none;
-    }
+  .content-main {
+    width: 100%;
+    box-shadow: none;
+  }
 
-    .header-logo {
-        max-width: 126px;
-    }
+  .header-logo {
+    max-width: 126px;
+  }
 }
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .inner-section {
-        min-height: auto;
-    }
+  .inner-section {
+    min-height: auto;
+  }
 
-    .content-main {
-        min-height: auto;
-    }
+  .content-main {
+    min-height: auto;
+  }
 }
-
+@media screen and (min-device-width: 999px) and (max-device-width: 1025px) {
+  .inner-section {
+    min-height: 720px;
+  }
+}
 @media screen and (min-width: 1750px) {
-    .container.container-lg {
-        max-width: 1650px;
-    }
+  .container.container-lg {
+    max-width: 1650px;
+  }
 
-    header .navbar {
-        padding: 29px 1rem;
-    }
+  header .navbar {
+    padding: 29px 1rem;
+  }
 
-    .header-logo {
-        max-width: 260px;
-    }
+  .header-logo {
+    max-width: 260px;
+  }
 
-    .navbar-light .navbar-nav .nav-link.link-lg {
-        font-size: 25px !important;
-    }
+  .navbar-light .navbar-nav .nav-link.link-lg {
+    font-size: 25px !important;
+  }
 
-    .navbar .header-button {
-        width: 155px;
-        font-size: 12px !important;
-        font-size: 17px !important;
-        padding: 14px 16px !important;
-        width: 226px;
-    }
+  .navbar .header-button {
+    width: 155px;
+    font-size: 12px !important;
+    font-size: 17px !important;
+    padding: 14px 16px !important;
+    width: 226px;
+  }
 
-    .header-button span {
+  .header-button span {
+    font-size: 22px;
+  }
 
-        font-size: 22px;
-    }
+  .bottom-footer .bottom-icon {
+    padding: 80px 0;
+  }
 
-    .bottom-footer .bottom-icon {
-        padding: 80px 0;
-    }
-
-    .bottom-footer .verified-logo {
-       width: 266px;
-        margin: 8px 0;
-    }
-    .bottom-footer .acredit-logo {
+  .bottom-footer .verified-logo {
+    width: 266px;
+    margin: 8px 0;
+  }
+  .bottom-footer .acredit-logo {
     width: 123px;
     margin-right: 46px;
-}
+  }
 
+  footer .inner-footer {
+    padding: 40px 60px 40px 60px;
+  }
 
-    footer .inner-footer {
-        padding:40px 60px 40px 60px;
-    }
+  footer .inner-footer .footer-link {
+    font-size: 30px !important;
+  }
 
-    footer .inner-footer .footer-link {
-        font-size: 30px !important;
-       
-    }
+  footer .inner-footer .footer-link:hover {
+    text-decoration: underline;
+  }
 
-    footer .inner-footer .footer-link:hover {
-        text-decoration: underline;
-    }
+  footer .inner-footer .text-xl {
+    font-size: 25px !important;
+    font-family: 'Acumin-pro-bold';
+  }
 
-    footer .inner-footer .text-xl {
-        font-size: 25px !important;
-         font-family:'Acumin-pro-bold';
-    }
-
-    footer .inner-footer .footer-text {
-        font-size: 20px;
-        line-height: 32px;
-    }
-    footer .inner-footer .footer-flex-container {
+  footer .inner-footer .footer-text {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  footer .inner-footer .footer-flex-container {
     margin-bottom: 170px;
-    
+  }
+  footer .inner-footer .text-xl {
+    font-size: 20px !important;
+  }
 }
-
-
+@media screen and (min-width: 1280px) {
+  .inner-footer .footer-text {
+    font-size: 13px;
+  }
 }
 @media screen and (min-width: 1440px) {
-    footer .inner-footer .footer-link {
-        font-size: 25px !important;
-       
-    }
-    footer .inner-footer .text-xl {
-        font-size: 20px !important;
-    }
+  footer .inner-footer .footer-link {
+    font-size: 25px !important;
+  }
+  footer .inner-footer .text-xl {
+    font-size: 16px !important;
+  }
 }

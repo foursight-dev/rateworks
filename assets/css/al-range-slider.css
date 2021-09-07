@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     font-size: 10px;
     margin: 0;
-    padding: 0 90px 0 90px;
+    padding: 0 105px 0 105px;
     position: relative;
     width: 100%
 }
@@ -55,7 +55,7 @@
 }
 .al-range-slider__track {
     border-radius: 1em;
-    box-shadow: inset 0 0 .2em .1em var(--color_surface);
+    box-shadow: inset 0 0 -0.8em .0em var(--color_surface);
     cursor: pointer;
     height: 1.2em;
     margin: 2.3em 0 1.5em 0;
@@ -151,7 +151,7 @@
     width: 100%
 }
 .al-range-slider_dark .al-range-slider__bar {
-    box-shadow: inset 0 0 .2em var(--color_surface), 0 0 .2em var(--color_primary)
+/*    box-shadow: inset 0 0 .2em var(--color_surface), 0 0 .2em var(--color_primary)*/
 }
 .al-range-slider__knob {
     background: #B2DA22;

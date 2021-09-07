@@ -4,25 +4,21 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <title>Home page</title>
+    <title>Gross Income - Rateworks</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/al-range-slider.css" />
     <!-- Bootstrap core JS-->
-    <script src="../../assets/js/custom.js" type="text/javascript"></script>
-    <!-- <script src="../../assets/js/bootstrap.min.js" type="text/javascript" ></script> -->
-    <script src="../../assets/js/jquery-3.2.1.slim.min.js" type="text/javascript"></script>
-    <script src="../../assets/js/popper.min.js" type="text/javascript"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <header>
         <div class="container container-lg">
             <nav class="navbar navbar-expand-lg navbar-light px-0">
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="index.html">
                     <img src="./assets/images/main-logo.png" alt="rates logo" class="header-logo">
                 </a>
                 <a class="nav-link header-button mr-0 text-center d-lg-none" href="#">
@@ -59,40 +55,44 @@
         </div>
     </header>
 
+    <div class="container container-lg">
+        <div class="mt-3 d-none d-lg-block">
+            <a class="text-sm text-gray-light mt-4 mr-2" href="index.html">Arizona</a><img src="./assets/images/ionic-ios-arrow-back.svg" alt="rates logo"><a class="text-sm text-gray-light mt-4 ml-2 mr-2" href="current-loan.html">Current Loan</a><img src="./assets/images/ionic-ios-arrow-back.svg" alt="rates logo"><a class="text-sm text-gray-light mt-4 ml-2 mr-2" href="current-payment.html">Current Payment</a><img src="./assets/images/ionic-ios-arrow-back.svg" alt="rates logo"><a class="text-sm text-primary-color underline mt-4 ml-2" href="gross-income.html">Gross Income</a>
+        </div>
+      </div>
     <!-- inner page content -->
     <section class="inner-section d-flex">
         <div class="container">
-            <div class="mt-3 d-none d-lg-block">
-                <a class="text-sm text-gray-light mt-4 mr-2" href="index.html">Arizona</a><img src="./assets/images/ionic-ios-arrow-back.svg" alt="rates logo"><a class="text-sm text-gray-light mt-4 ml-2 mr-2" href="current-loan.html">Current Loan</a><img src="./assets/images/ionic-ios-arrow-back.svg" alt="rates logo"><a class="text-sm text-gray-light mt-4 ml-2 mr-2" href="current-payment.html">Current Payment</a><img src="./assets/images/ionic-ios-arrow-back.svg" alt="rates logo"><a class="text-sm text-primary-color underline mt-4 ml-2" href="gross-income.html">Gross Income</a>
-            </div>
+            
             <h3 class="text-center mt-4 pt-1"><span class="text-light-primary">Get Your</span> <span class="text-primary-color font-weight-bold">Refinance Quote</span> <span class="text-light-primary">Now</span></h3>
             <div class="row d-flex justify-content-center">
-                <div class="col-lg-11 col-xl-9">
+                <div class="col-lg-11 col-xl-10">
 
                     <div class="inner-container mt-3 mb-5 slider-range">
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 36%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="heading">
                             <h1>Gross Income</h1>
-                            <p class="mb-0">What is your Gross Monthly Income</p>
+                            <p class="">What is your Gross Monthly Income?</p>
                         </div>
                         <div class="content-section form-input-weight">
-                            <form class="text-center" action="credit-score.html">
+                            <form class="text-center" name="gross-income" action="credit-score.html">
                                 <div class="row d-flex justify-content-center">
                                     <div class="col-md-7 col-lg-6">
-                                        <div class="form-group mx-xl-4 mx-md-3 mt-md-0 mt-5 pt-md-0 pt-3 ">
-                                            <input type="text" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Input Amount">
+                                        <div class="form-group mx-xl-5 mx-md-3 mt-md-0 mt-5 pt-md-0 pt-3 ">
+                                            <input type="text" id="amount" name="amount" class="form-control input" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$"
+                                                data-type="currency" maxlength="11" placeholder="Input Amount">
                                         </div>
                                     </div>
                                 </div>
                                 <p class="text-light-primary mb-md-2 pt-3 pt-md-0">or</p>
-                                <div class="basic">
+                                <div class="grossPayment">
                                 </div>
                                 <div class="price-range mb-4 mb-md-5 text-sm">
                                     <div class="d-flex justify-content-between text-primary-color">
                                         <span>$100</span>
-                                        <span>$10,000+</span>
+                                        <span>$10,000.00+</span>
                                     </div>
                                 </div>
                                 <div class="pt-3 mt-5 mt-md-0">
@@ -137,7 +137,7 @@
                 The materials contained within this website are protected by
                 applicable copyright and trademark laws.
             </p>
-            
+
             </div>
         </div>
     </footer>
@@ -148,27 +148,32 @@
             <img src="./assets/images/acredit_business.png" alt="rates logo" class="acredit-logo">
         </div>
     </div>
-    <script src="assets/js/al-range-slider.js"></script>
-    <script>
-        $('.basic').alRangeSlider();
-        const options = {
-            range: {
-                min: -100,
-                max: 100,
-                step: 1
+<script src="assets/js/al-range-slider.js"></script>
+<script src="assets/js/jquery.validate.min.js"></script>
+<script src="assets/js/custom.js" type="text/javascript"></script>
+<script>
+    $(function () {
+        $("form[name='gross-income']").validate({
+            rules: {
+                amount: {
+                    required: true,
+                    number: false,
+                    maxlength: 11
+                },
             },
-            initialSelectedValues: {
-                from: -50,
-                to: 50
+            messages: {
+                amount: {
+                    required: "Amount Field is required",
+                    maxlength:"  Current amount cannot be greater than 11 characters"
+                    // minlength: ""
+                },
             },
-            grid: {
-                minTicksStep: 1,
-                marksStep: 5
-            },
-            theme: "dark",
-        };
-
-    </script>
+            submitHandler: function (form) {
+                form.submit();
+            }
+        });
+    });
+</script>
 </body>
 
 </html>
