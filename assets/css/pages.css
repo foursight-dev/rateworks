@@ -85,6 +85,10 @@ ul.carousel-indicators {
 .link-default .trim .list-items a {
   padding: 12px 30px;
 }
+.list-items1 .btn.focus,
+.btn:focus {
+  box-shadow: unset;
+}
 .link-default .list-items img {
   margin-right: 16px;
 }
@@ -103,6 +107,9 @@ ul.carousel-indicators {
 }
 .link-default .list-items button:focus,
 .link-default .list-items a:focus {
+  outline: none;
+}
+button:focus {
   outline: none;
 }
 .vehicle-year .link-default .list-items button,
@@ -169,7 +176,7 @@ ul.carousel-indicators {
   color: #021b75;
 }
 
-.states .link-default .list-items button, 
+.states .link-default .list-items button,
 .states .link-default .list-items a {
   font-size: 14px;
 }
@@ -181,12 +188,12 @@ ul.carousel-indicators {
   -moz-box-shadow: -1px 1px 8px 3px rgba(161, 161, 161, 0.25);
 }
 
-.inner-container .progress-bar {
+.progress-bar {
   background-color: #021b75;
   height: 0.6rem !important;
 }
 
-.inner-container .progress {
+.progress {
   height: 0.6rem !important;
   border-radius: 10px 10px 0px 0px;
   background-color: #d5e8fe;
@@ -206,11 +213,11 @@ ul.carousel-indicators {
   opacity: 1;
 }
 
-.states .inner-container .carousel-control-next, 
+.states .inner-container .carousel-control-next,
 .states .inner-container .carousel-control-prev {
   min-height: 334px !important;
 }
-.make .inner-container .carousel-control-next, 
+.make .inner-container .carousel-control-next,
 .make .inner-container .carousel-control-prev {
   min-height: 347px;
 }
@@ -370,7 +377,6 @@ ul.carousel-indicators {
   .list-items1 {
     margin-top: 21px;
   }
-
 }
 
 @media screen and (max-width: 375px) {
@@ -389,7 +395,7 @@ ul.carousel-indicators {
   .inner-container .carousel-item {
     display: block;
   }
-  .inner-container .progress {
+  .progress {
     border-radius: 6px 6px 0px 0px;
   }
   .inner-container .heading h1 {
@@ -502,20 +508,21 @@ ul.carousel-indicators {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-      .states .inner-container .carousel-control-next, .states .inner-container .carousel-control-prev {
-        min-height: 426px !important;
-    }
-    .states .inner-container {
-      min-height: 609px;
-    }
-    .make .inner-container {
-      min-height: 703px;
-    }
-    .make .inner-container .carousel-control-next, .make .inner-container .carousel-control-prev {
-      min-height: 518px;
-    }
+  .states .inner-container .carousel-control-next,
+  .states .inner-container .carousel-control-prev {
+    min-height: 426px !important;
+  }
+  .states .inner-container {
+    min-height: 609px;
+  }
+  .make .inner-container {
+    min-height: 703px;
+  }
+  .make .inner-container .carousel-control-next,
+  .make .inner-container .carousel-control-prev {
+    min-height: 518px;
+  }
 }
-
 
 @media screen and (min-width: 768px) {
   .carousel-control-prev {

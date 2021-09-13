@@ -54,7 +54,20 @@
         url('../fonts/AcuminPro-Light.svg') format('svg');
     /* Legacy iOS */
 }
-
+@font-face {
+    font-family:'Acumin-pro-regular';
+    src: url('../fonts/AcuminPro-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/AcuminPro-Regular?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        /* Super Modern Browsers */
+        url('../fonts/AcuminPro-Regular.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/AcuminPro-Regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/AcuminPro-Regular.svg') format('svg');
+    /* Legacy iOS */
+}
 @font-face {
     font-family:'Acumin-pro';
     src: url('../fonts/AcuminPro-Regular.eot');

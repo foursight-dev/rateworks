@@ -30,9 +30,12 @@ h4 {
   border-color: #ebedf4;
   padding-top: 10px;
   border-radius: 10px;
-  color: #243987;
+  color: #021b75;
+  font-family: 'Acumin-pro-light';
 }
-
+.form-control:focus {
+  box-shadow: none;
+}
 .form-control.input:hover {
   box-shadow: 0px 1px 4px #021b7529;
   -webkit-box-shadow: 0px 1px 4px #021b7529;
@@ -44,9 +47,9 @@ form .error {
 }
 form label.error {
   font-size: 14px;
-    margin-top: 4px;
-    float: left;
-    text-align: initial;
+  margin-top: 4px;
+  float: left;
+  text-align: initial;
 }
 /* header css */
 
@@ -118,7 +121,9 @@ footer .inner-footer .text-xl {
   width: 270px;
   margin: 8px 0;
 }
-
+.form-control.input:focus {
+  border: 1px solid #021b75;
+}
 .bottom-footer .acredit-logo {
   width: 120px;
   margin-left: 25px;
