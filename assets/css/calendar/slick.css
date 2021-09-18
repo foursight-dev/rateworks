@@ -1,0 +1,356 @@
+/* Slider */
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+    line-height: 2;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+/* internal css of calender page*/
+
+.table-condensed thead > tr:first-child {
+    display: none;
+}
+
+.table-condensed thead > tr {
+    background: #021b75;
+    border-radius: 0 4px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.table-condensed thead tr th {
+    font-weight: normal !important;
+    border-radius: 0;
+    height: 42px;
+    padding: 7px 0 0 0;
+}
+
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover {
+    background: #021b75;
+}
+
+.table-condensed {
+    font-size: 14px;
+}
+
+.slider {
+    /* width: 50%; */
+    width: 8%;
+}
+
+.content-section .slider {
+    width: 70px;
+    /*    height: 247px;*/
+}
+
+
+/*
+.content-section .slick-list.draggable {
+    height: 186px !important;
+    padding: 59px 0px !important;
+}
+*/
+
+.content-section div#datetimepicker4 {
+    margin: 0 25px 0 25px;
+}
+
+.slick-slide img {
+    width: 120px !important;
+    height: 20px;
+}
+
+.slick-slide {
+    margin: 0px 10px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-slide {
+    transition: all ease-in-out 0.3s;
+    opacity: 0.2;
+}
+
+.slick-list .slick-track {
+    transform: translate3d(0px, -49px, 0px);
+}
+
+.slick-active {
+    opacity: 0.5;
+}
+
+.slick-current {
+    opacity: 1;
+    font-size: 16px;
+    /* border: 1px solid red !important; */
+}
+
+.slick-slide li a:active {
+    outline: unset;
+    color: #021b75;
+}
+
+.slick-slide li a:focus {
+    outline: unset;
+}
+
+.slick-list {
+    /* border: 2px solid green; */
+    overflow: hidden;
+    /*    font-size: 12px;*/
+}
+
+.slick-slide li a {
+    font-family: 'Acumin-pro';
+    color: #021b75;
+    text-decoration: none;
+}
+
+.slick-prev {
+    background: transparent;
+    color: transparent;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.slick-next {
+    background: transparent;
+    color: transparent;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.slick-prev:after {
+    content: '13444';
+    width: 17px;
+    height: 17px;
+    background: url(../../images/top-arrow.svg) no-repeat right white;
+    position: absolute;
+    left: 33%;
+    margin-top: 7px;
+}
+
+.slick-next:after {
+    content: '13444';
+    width: 17px;
+    height: 17px;
+    background: url(../../images//bottom-arrow.svg) no-repeat right white;
+    position: absolute;
+    left: 33%;
+    bottom: 3px;
+}
+
+.slick-vertical {
+    box-shadow: 0px 0px 10px #021b7528;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+
+/* .slick-list.draggable {
+    min-height: 205px;
+} */
+
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover {
+    background: #021b75;
+    background: transparent linear-gradient(180deg, #3288eb 0%, #186adf 100%) 0% 0% no-repeat padding-box;
+}
+
+.datepicker {
+    padding: 0px;
+}
+
+.datepicker-inline {
+    width: 300px;
+    box-shadow: 0px 3px 6px #021b7528;
+    border-radius: 5px;
+    /* border: 2px solid red; */
+    overflow: hidden;
+}
+
+.datepicker td,
+.datepicker th {
+    width: 43px;
+    height: 35px;
+}
+
+.calendar .inner-container {
+    min-height: 542px;
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+ .datepicker td, .datepicker th {
+    width: 68px !important;
+}
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+    .content-section .slider {
+        width: 10%;
+    }
+}
+
+@media (max-width: 767px) {
+    .content-section .slick-list.draggable {
+        height: auto !important;
+        padding:18px 0px !important;
+    }
+    .content-section .slider {
+        width: 100%;
+        height: 60px;
+        box-shadow: 0px 3px 6px #021b7528;
+        border-radius: 5px;
+    }
+    .slick-prev {
+        left: -16px;
+        top: 25%;
+        position: absolute;
+        -ms-transform: rotate(-93deg);
+        transform: rotate( 270deg);
+        padding: 0px 0px 6px 0;
+        background: #fff;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .slick-next {
+        right: -18px;
+        top: 17px;
+        position: absolute;
+        -ms-transform: rotate(300grad);
+        transform: rotate( 300grad);
+        padding: 0px 6px 0px 0;
+        background: #fff;
+        bottom: 0;
+        font-size: 0;
+         cursor: pointer;
+        width: 58px;
+        height: 25px;
+    }
+    .content-section div#datetimepicker4 {
+        margin: 0px;
+    }
+    .datepicker-inline {
+        width: 100%;
+    }
+    .datepicker td,
+    .datepicker th {
+        width: 49px;
+        height: 45px;
+    }
+}

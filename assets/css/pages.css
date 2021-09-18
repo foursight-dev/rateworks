@@ -373,6 +373,8 @@ button:focus {
   font-family: 'Acumin-pro-bold';
 }
 
+
+
 @media screen and (max-width: 768px) {
   .list-items1 {
     margin-top: 21px;

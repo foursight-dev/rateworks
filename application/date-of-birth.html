@@ -1,5 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+    Modified from the Debian original for Ubuntu
+    Last updated: 2016-11-16
+    See: https://launchpad.net/bugs/1288690
+  -->
 
 <head>
     <!-- Required meta tags -->
@@ -7,16 +12,21 @@
     <title>Date of Birth | Rateworks</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
+    <!-- <link href="../assets/css/calendar/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
+    <link href="../assets/css/calendar/datepicker.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/calendar/slick.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../assets/css/main.css" />
-    <link rel="stylesheet" href="../assets/css/jquery-nao-calendar.css" />
+
     <!-- Bootstrap core JS-->
+
 
 </head>
 
 <body>
+
     <header>
-        <div class="container container-lg">
-            <nav class="navbar navbar-expand-lg navbar-light px-0">
+        <div class="container container-lg px-0">
+            <nav class="navbar navbar-expand-lg navbar-light ">
                 <a class="navbar-brand" href="index.html">
                     <img src="../assets/images/main-logo.png" alt="rates logo" class="header-logo">
                 </a>
@@ -53,11 +63,10 @@
             </nav>
         </div>
     </header>
-
     <!-- inner page content -->
-    <section class="inner-section ">
+    <section class="inner-section calendar">
         <div class="container container-lg">
-            <div class="pt-3 d-none d-lg-block">
+            <div class="pt-4 d-none d-lg-block">
                 <a class="text-sm text-gray-light mt-4 mr-2" href="index.html">Your Info</a><img src="../assets/images/ionic-ios-arrow-back.svg" alt="right icon"><a class="text-sm text-gray-light mt-4 ml-2 mr-2" href="contact-info.html">Contact Info</a><img src="../assets/images/ionic-ios-arrow-back.svg" alt="right icon"><a class="text-sm text-primary-color underline mt-4 ml-2 mr-2" href="date-of-birth.html">Date of Birth</a>
               </div>
           </div>
@@ -77,11 +86,49 @@
 
                         </div>
                         <div class="content-section pt-4 pb-md-4 text-center">
-                            <div class="calendar-section">
-                            <div class="myCalendar"></div>
+
+                            <div class="calender-main d-md-flex mt-md-3 justify-content-center">
+
+                                <div class="centerleft d-none d-md-block slider month-gr">
+
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('0');" class="mon-0" attr-id="0">Jan</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('1');" class="mon-1" attr-id="1">Feb</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('2');" class="mon-2" attr-id="2">March</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('3');" class="mon-3" attr-id="3">April</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('4');" class="mon-4" attr-id="4">May</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('5');" class="mon-5" attr-id="5">Jun</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('6');" class="mon-6" attr-id="6">July</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('7');" class="mon-7" attr-id="7">Aug</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('8');" class="mon-8" attr-id="8">Sep</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('9');" class="mon-9" attr-id="9">Oct</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('10');" class="mon-10" attr-id="10">Nov</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('11');" class="mon-11" attr-id="11">Dec</a></li>
+                                </div>
+                                <div class="bottom slider d-md-none year-gr mb-4">
+                                </div>
+                                <div class="top slider month-gr  d-md-none mb-4">
+
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('0');" class="mon-0" attr-id="0">Jan</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('1');" class="mon-1" attr-id="1">Feb</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('2');" class="mon-2" attr-id="2">March</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('3');" class="mon-3" attr-id="3">April</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('4');" class="mon-4" attr-id="4">May</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('5');" class="mon-5" attr-id="5">Jun</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('6');" class="mon-6" attr-id="6">July</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('7');" class="mon-7" attr-id="7">Aug</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('8');" class="mon-8" attr-id="8">Sep</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('9');" class="mon-9" attr-id="9">Oct</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('10');" class="mon-10" attr-id="10">Nov</a></li>
+                                    <li class="item"><a href="javascript:void(0);" onclick="monthselected('11');" class="mon-11" attr-id="11">Dec</a></li>
+
+                                </div>
+
+                                <div id='datetimepicker4'></div>
+
+                                <div class="center slider d-none d-md-block year-gr">
+                                </div>
 
                             </div>
-
 
                         </div>
                     </div>
@@ -89,7 +136,6 @@
             </div>
         </div>
     </section>
-    <!--inner page end content-->
 
     <footer class="py-5 main-footer d-none d-md-block text-white">
         <div class="container container-lg">
@@ -130,26 +176,14 @@
             <img src="../assets/images/acredit_business.png" alt="rates logo" class="acredit-logo">
         </div>
     </div>
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/jquery-pseudo-ripple.js"></script>
-    <script src="../assets/js/jquery-nao-calendar.js"></script>
-    <script>
-        $('.myCalendar').calendar({
-            date: new Date(),
-            autoSelect: false, // false by default
-            select: function (date) {
-                console.log('SELECT', date)
-                 setTimeout(function () {
-      window.location.href = 'social-security.html';
-    }, 2000);
-            },
-            toggle: function (y, m) {
-                console.log('TOGGLE', y, m)
-            }
-        })
 
-    </script>
+    <script src="../assets/js/calendar/jquery.min.js"></script>
+    <script src="../assets/js/calendar/bootstrap3.min.js"></script>
+    <script src="../assets/js/calendar/bootstrap-datepicker.js"></script>
+    <script src="../assets/js/calendar/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../assets/js/calendar/calendar.js" type="text/javascript" charset="utf-8"></script>
+
+
 </body>
 
 </html>
